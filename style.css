@@ -1,0 +1,310 @@
+:root{
+    --primaria-color:#2261cb;
+    --segundaria-color:#c5e1e5;
+    --terceira-color:#1c19a6;
+    --branco-color:#fff;
+}
+
+body{
+    background-color: var(--primaria-color);
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+    scrollbar-face-color: var(--primaria-color);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    background-color: var(--primaria-color);
+    border-radius: 5px;
+}
+
+/*sessão dos conteúdos em geral*/
+#hause{
+    background-color: var(--branco-color);
+    border-radius: 10px;
+
+    height: 350px;
+    width: 400px;
+
+    position: relative;
+    margin:auto;
+    margin-top: 200px;
+    padding: 20px;
+
+  
+    max-height: 380px;
+}
+
+/*--------formulario-------*/
+#formulario{
+    margin-top: 15px;
+
+    
+}
+
+
+/*--------sessão de entrada de dados no formulario-------*/
+#adicionar{
+    border-style:groove;
+    border-radius: 5px;
+    border-color: var(--primaria-color);
+
+    position: relative;
+
+
+    width:215px;
+    height: 25px;
+    padding:8px;
+    margin-bottom: 40px;
+}
+
+/*--------buttom de adicionar-------*/
+#botao{
+    background-color: var(--primaria-color);
+    color: var(--branco-color);
+
+    border-style: groove;
+    border: 1px;
+    border-color: var(--primaria-color);
+    border-radius: 5px;
+    
+
+    margin-left: 5px;
+
+    width:50px;
+
+    padding: 12px 17px 12px 17px;
+
+    cursor: pointer;
+}
+
+#botao{
+
+    transition:0.4;
+}
+
+#botao:hover{
+    background-color: #144ba9;
+}
+
+.cardContainer{
+    height: 285px;
+    overflow-y:scroll;
+
+}
+/*--------sessões dos cards-------*/
+.card{
+
+    margin-top: 10px;
+    padding:9px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border:1px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #b7b7a4;
+    background-color: var(--segundaria-color);
+}
+
+.tmletra{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/*--------botões da lixeira-------*/
+.buttoncard{
+    background-color: var(--terceira-color);
+
+    border: solid;
+    border-radius:5px;
+    border-color:var(--terceira-color);
+
+    padding:7px 10px 7px 10px;
+
+
+    cursor: pointer;
+}
+
+.buttoncard {
+    transition-duration: 0.4s;
+  }
+  
+  .buttoncard:hover {
+    background-color: #403dd9; 
+    border-color: #403dd9;
+  }
+
+/*--------icone de lixeira-------*/
+i{
+
+    background-color: var(--terceira-color);
+    color: var(--branco-color);
+}
+
+
+
+
+/*--------TELA DE 1024 DE WIDTH-------*/
+@media (min-width: 1024px){
+    /*sessão dos conteúdos em geral*/
+    #hause{
+     width:500px;
+     height:480px;   
+    }
+
+    /*--------sessão de entrada de dados no formulario-------*/
+    #adicionar{
+        width:377px;
+        height: 25px;
+
+        padding:10px;
+        margin-bottom: 25px;
+
+        border-radius: 10px;
+    }
+
+    /*--------buttom de adicionar-------*/
+    #botao{
+        width:90px;
+        margin-left: 5px;
+    
+        padding: 18px 25px 18px 25px;
+
+        font-size: 18px;
+    }
+
+    /*--------sessões dos cards-------*/
+    .card{
+        margin-top: 14px;
+        padding:13px;
+        
+    }
+
+    .tmletra{
+        font-size: 18px;
+    }
+
+
+    /*--------botões da lixeira-------*/
+    .buttoncard{
+        padding:13px 14px 13px 14px;
+
+        margin-left: 280px;
+    }
+
+    /*--------icone de lixeira-------*/
+    i{
+        font-size: 18px;
+    }
+}
+
+
+/*--------TELA DE ATE 768PX-------*/
+@media (max-width: 768px){
+
+    /*--------sessão de entrada de dados no formulario-------*/
+    #adicionar{
+        margin-bottom: 20px;
+    }
+
+    .tmletra{
+        max-width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+     /*sessão dos conteúdos em geral*/
+     #hause{
+        width: 350px;
+        height: 350px;
+        
+    }
+
+    #botao{
+        margin-left: 10px;
+    
+        width:50px;
+
+        padding: 15px 20px 15px 20px;
+
+    }
+}
+
+/*--------TELA DE ATE 425PX-------*/
+@media (max-width: 425px){
+    /*sessão dos conteúdos em geral*/
+    #hause{
+        width: 350px;
+        height: 370px;
+        
+    }
+
+    .tmletra{
+        max-width: 800px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+}
+
+
+/*--------TELA DE ATE 320PX-------*/
+@media (max-width: 320px){
+    /*sessão dos conteúdos em geral*/
+    #hause{
+     width:260px;
+     height:300px;   
+    }
+
+
+    /*--------sessão de entrada de dados no formulario-------*/
+    #adicionar{
+        width:187px;
+        height: 20px;
+        padding:5px;
+        margin-bottom: 20px;
+    }
+
+    /*--------buttom de adicionar-------*/
+    #botao{
+        margin-left: 5px;
+    
+        width:50px;
+    
+        padding: 10px 13px 10px 13px;
+    }
+
+    /*--------sessões dos cards-------*/
+    .card{
+        padding:5px 9px 5px 5px;
+        margin-top: 10px;
+    }
+
+    /*--------botões da lixeira-------*/
+    .buttoncard{
+        margin-left: 80px;
+    }
+
+    .tmletra{
+        max-width: 800px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+   
+}
